@@ -10,3 +10,16 @@ html {
 .App {
   display: flex; 
 }
+
+
+/* 
+  MEDIA QUERIES 
+*/ 
+
+@media only screen and (max-width: 768px) {
+  /* mobile */ 
+  .App {
+    display: flex; 
+    flex-direction: column; 
+  }
+}

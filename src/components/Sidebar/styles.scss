@@ -1,0 +1,80 @@
+// sidebar component 
+@import '../../sass/_base.scss';
+
+
+.sidebar {
+  @include flex-col-centered; 
+  align-items: flex-start; 
+  font-family: $mono; 
+  width: 300px; 
+
+  color: $charcoal; 
+
+  .sidebar-top {
+    font-size: $sp-xl; 
+    padding: $sp-s; 
+    color: $charcoal; 
+    border-bottom: 3px solid $charcoal; 
+  }
+
+  .sidebar-nav {
+    font-size: $sp-m; 
+
+    .nav-option {
+      @include wiggle; 
+      margin-left: $sp-m; 
+      margin-top: $sp-s; 
+      margin-bottom: $sp-s; 
+    }
+    .nav-option:nth-child(1) {
+      @include hover-color($lightblue); 
+    }
+    .nav-option:nth-child(2) {
+      @include hover-color($orange); 
+    }
+    .nav-option:nth-child(3) {
+      @include hover-color($red); 
+    }
+    .nav-option:nth-child(4) {
+      @include hover-color($yellow); 
+    }
+  }
+
+  .sidebar-bottom {
+    @include wiggle; 
+    @include hover-color(black); 
+    margin-top: $sp-m; 
+    margin-left: $sp-m;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: row;  
+    width: 100%; 
+    flex-wrap: nowrap; 
+    margin-bottom: $sp-s; 
+
+    .sidebar-top {
+      border: none; 
+      border-right: 3px solid $charcoal; 
+    }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;    
+      font-size: $sp; 
+
+      .nav-option {
+        margin-top: $sp-m; 
+      }
+    }
+
+    .sidebar-bottom {
+      align-self: flex-start; 
+    }
+  }
+} 
