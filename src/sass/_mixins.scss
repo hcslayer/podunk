@@ -1,0 +1,33 @@
+/* 
+  FLEX 
+*/ 
+
+@mixin flex-row-centered {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+}
+
+@mixin flex-col-centered {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+}
+
+/* 
+  INTERACTIVITY
+*/
+
+@mixin hover-color($color) {
+  &:hover{
+    color: $color; 
+  }
+}
+
+@mixin wiggle {
+  &:hover {
+    cursor: pointer; 
+    transform: scale(1.04); 
+  }
+}
+

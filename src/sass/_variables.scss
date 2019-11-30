@@ -1,0 +1,38 @@
+/* 
+  COLORS 
+*/ 
+
+$yellow: #edc951;
+$orange: #eb6841; 
+$red: #cc2a36; 
+$brown: #4f372d; 
+$lightblue: #00a0b0; 
+$charcoal: #979797; 
+
+/* 
+  SPACING 
+*/ 
+
+$sp-xs: .25rem; 
+$sp-s: .5rem; 
+$sp: 1rem; 
+$sp-m: 1.5rem; 
+$sp-l: 2rem; 
+$sp-xl: 2.5rem; 
+$sp-xxl: 3rem; 
+
+/* 
+  TYPOGRAPHY
+*/ 
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto|Source+Sans+Pro&display=swap');
+
+$mono: 'Andale Mono', monospace;
+$robo: 'Roboto', sans-serif; 
+$serif: 'Merriweather', serif; 
+$source: 'Source Sans Pro' sans-serif; 
+
+/* 
+  EXTRAS
+*/ 
+
